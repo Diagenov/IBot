@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>IBot</RootNamespace>
+		<AssemblyName>IBot</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="MonoGame.Framework">
+			<HintPath>..\References\MonoGame.Framework.dll</HintPath>
+		</Reference>
+		
+		<Reference Include="IBotProxy">
+			<HintPath>..\References\IBotProxy.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>
