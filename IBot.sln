@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBot", "IBot\IBot.csproj", "{53F99E28-7D5A-4AF4-81B6-EE0A378C213B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBot", "IBot\IBot.csproj", "{53F99E28-7D5A-4AF4-81B6-EE0A378C213B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B7286EB8-3A0E-4F80-BB2B-F398E79FC6DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple", "Test\Simple\Simple.csproj", "{F7BDCD65-4D09-46B4-91D5-004C39465EA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{53F99E28-7D5A-4AF4-81B6-EE0A378C213B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53F99E28-7D5A-4AF4-81B6-EE0A378C213B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53F99E28-7D5A-4AF4-81B6-EE0A378C213B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7BDCD65-4D09-46B4-91D5-004C39465EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7BDCD65-4D09-46B4-91D5-004C39465EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7BDCD65-4D09-46B4-91D5-004C39465EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7BDCD65-4D09-46B4-91D5-004C39465EA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7BDCD65-4D09-46B4-91D5-004C39465EA7} = {B7286EB8-3A0E-4F80-BB2B-F398E79FC6DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7700A870-8B4C-4189-8FDD-58382D424031}

@@ -365,3 +365,7 @@ IBotProxy.dll
 
 IBot/bin/Debug/net6.0/*
 !IBot/bin/Debug/net6.0/IBot.dll
+
+*/Test/*
+[Dd]ebug/
+[Bb]in/

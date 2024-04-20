@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+		<Reference Include="MonoGame.Framework">
+			<HintPath>..\..\References\MonoGame.Framework.dll</HintPath>
+		</Reference>
+		
+		<Reference Include="IBotProxy">
+			<HintPath>..\..\References\IBotProxy.dll</HintPath>
+		</Reference>
+		
+		<Reference Include="IBot">
+			<HintPath>..\..\IBot\bin\Debug\net6.0\IBot.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+</Project>

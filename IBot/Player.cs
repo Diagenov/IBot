@@ -129,7 +129,7 @@ namespace IBot
         /// <summary>
         /// Sets random skin, inventory, buffs and direction.
         /// </summary>
-        public void Random()
+        public Player Random()
         {
             Skin = (byte)Utils.Rand.Next(MaxSkin + 1);
             Hair = (byte)Utils.Rand.Next(MaxHair + 1);
@@ -156,6 +156,8 @@ namespace IBot
                 Control |= Control.ControlLeft;
             else
                 Control |= Control.ControlRight;
+
+            return this;
         }
     }
 }
