@@ -594,6 +594,23 @@ namespace IBot
                         if (ID == packet.Data[0])
                             await SendSpawn();
                         break;
+
+                    case 65:
+                        if (packet.Data[0].Bit(0))
+                        {
+                            break;
+                        }
+                        using (var r = packet.Reader)
+                        {
+                            r.BaseStream.Position++;
+                            if (r.ReadInt16() != ID)
+                                break;
+
+                            Player.Position.X = r.ReadSingle();
+                            Player.Position.Y = r.ReadSingle();
+                            await SendUpdatePlayer();
+                        }
+                        break;
                 }
             }
             catch (Exception ex)

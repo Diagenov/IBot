@@ -94,10 +94,10 @@ namespace IBot
             };
         }
 
-        public Item(short itemID, short stack = 1, byte prefix = 0)
+        public Item(int itemID, int stack = 1, byte prefix = 0)
         {
-            ItemID = Math.Max((short)0, Math.Min(itemID, MaxItemID));
-            Stack = Math.Max((short)0, Math.Min(stack, (short)9999));
+            ItemID = (short)Math.Max(0, Math.Min(itemID, MaxItemID));
+            Stack = (short)Math.Max(0, Math.Min(stack, 9999));
             Prefix = Math.Min(prefix, MaxPrefix);
         }
     }

@@ -9,6 +9,8 @@ Hooks.ServerChat += (Message x, Bot y) =>
 {
     Console.WriteLine(x.GetSingleColorText.Item1);
 };
+Hooks.CrashLogs = true;
+
 while (true)
 {
     Console.Write("IP: ");

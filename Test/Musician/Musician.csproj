@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,8 +6,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+  
   <ItemGroup>
+    <Reference Include="Melanchall.DryWetMidi">
+			<HintPath>..\..\References\Melanchall.DryWetMidi.dll</HintPath>
+		</Reference>
+		
 		<Reference Include="IBot">
 			<HintPath>..\..\IBot\bin\Debug\net6.0\IBot.dll</HintPath>
 		</Reference>

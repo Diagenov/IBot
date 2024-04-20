@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBot", "IBot\IBot.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B7286EB8-3A0E-4F80-BB2B-F398E79FC6DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple", "Test\Simple\Simple.csproj", "{F7BDCD65-4D09-46B4-91D5-004C39465EA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple", "Test\Simple\Simple.csproj", "{F7BDCD65-4D09-46B4-91D5-004C39465EA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Musician", "Test\Musician\Musician.csproj", "{D215C83B-1A8E-41F8-B807-86556C7542BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +25,17 @@ Global
 		{F7BDCD65-4D09-46B4-91D5-004C39465EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7BDCD65-4D09-46B4-91D5-004C39465EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7BDCD65-4D09-46B4-91D5-004C39465EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D215C83B-1A8E-41F8-B807-86556C7542BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D215C83B-1A8E-41F8-B807-86556C7542BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D215C83B-1A8E-41F8-B807-86556C7542BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D215C83B-1A8E-41F8-B807-86556C7542BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F7BDCD65-4D09-46B4-91D5-004C39465EA7} = {B7286EB8-3A0E-4F80-BB2B-F398E79FC6DF}
+		{D215C83B-1A8E-41F8-B807-86556C7542BE} = {B7286EB8-3A0E-4F80-BB2B-F398E79FC6DF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7700A870-8B4C-4189-8FDD-58382D424031}
