@@ -1,5 +1,6 @@
 ﻿using IBot;
 
+
 Console.Title = ">:3";
 Hooks.Console += (Message x) =>
 {
@@ -16,6 +17,7 @@ while (true)
     Console.Write("IP: ");
     MainAsync(Console.ReadLine() ?? "terraria.tk").Wait();
 }
+
 
 static async Task MainAsync(string ip)
 {

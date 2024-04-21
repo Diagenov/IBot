@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Discord.Net.WebSocket">
+      <HintPath>..\..\References\Discord.Net.WebSocket.dll</HintPath>
+    </Reference>
+
+    <Reference Include="Discord.Net.Core">
+      <HintPath>..\..\References\Discord.Net.Core.dll</HintPath>
+    </Reference>
+
+    <Reference Include="Discord.Net.Rest">
+      <HintPath>..\..\References\Discord.Net.Rest.dll</HintPath>
+    </Reference>
+    
+    <Reference Include="IBot">
+      <HintPath>..\..\IBot\bin\Debug\net6.0\IBot.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

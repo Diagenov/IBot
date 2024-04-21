@@ -2,6 +2,7 @@
 using Melanchall.DryWetMidi.Core;
 using static Musician.Tools;
 
+
 Console.Title = ">:3";
 Hooks.Console += (Message x) =>
 {
@@ -52,6 +53,7 @@ while (true)
     }
     MainAsync(ip, port, index, password).Wait();
 }
+
 
 static async Task MainAsync(string ip, ushort port, int index, string password)
 {
