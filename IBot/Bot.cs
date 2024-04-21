@@ -24,7 +24,7 @@ namespace IBot
         /// Needed to send 36 packets, which are sent every 15 seconds to keeping connection.
         /// You will have to adjust its values ​​yourself to make the bot look like a regular player.
         /// </summary>
-        public readonly byte[] Zones = new byte[4]; // ?
+        public readonly byte[] Zones = new byte[5]; // ?
 
         public string UUID;
         public byte ID { get; private set; }
@@ -349,7 +349,7 @@ namespace IBot
                 Player.Pulley |= Pulley.UpdateVelocity;
                 bytes.AddRange(Player.Velocity.GetBytes());
             }
-            else
+            else if (Player.Pulley.HasFlag(Pulley.UpdateVelocity))
             {
                 Player.Pulley ^= Pulley.UpdateVelocity;
             }
@@ -359,16 +359,23 @@ namespace IBot
                 bytes.AddRange(Player.OriginalPos.GetBytes());
                 bytes.AddRange(Player.HomePos.GetBytes());
             }
-            else
+            else if (Player.Miscs.HasFlag(Miscs.UsedPotionofReturn))
             {
                 Player.Miscs ^= Miscs.UsedPotionofReturn;
             }
+
+            var pulley = Player.Pulley;
+            if (pulley.HasFlag(Pulley.Direction) && !pulley.HasFlag(Pulley.Enabled))
+            {
+                pulley ^= Pulley.Direction;
+            }
+
             return await Send(13, 
                 ID,
                 (byte)Player.Control,
-                (byte)Player.Pulley,
+                (byte)pulley,
                 (byte)Player.Miscs,
-                Player.Sleeping,
+                (byte)Player.Sleeping,
                 Player.SelectedSlot,
                 Player.Position,
                 bytes.ToArray());

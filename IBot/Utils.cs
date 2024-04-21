@@ -245,11 +245,6 @@ namespace IBot
                 else if (x is Point)
                     w.Write((Point)x);
             }
-
-            for (int i = 0; i < args.Length; i++)
-            {
-                
-            }
         }
     }
 }

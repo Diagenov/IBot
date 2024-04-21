@@ -78,7 +78,8 @@
         UpdateVelocity = 4,
         VortexStealthActive = 8,
         GravityDirection = 16,
-        ShieldRaised = 32
+        ShieldRaised = 32,
+        Ghost = 64,
     }
 
     public enum Miscs : byte
@@ -92,5 +93,15 @@
         IsPettingSmallAnimal = 32,
         UsedPotionofReturn = 64,
         HoveringDown = 128
+    }
+
+    public enum Sleeping : byte
+    {
+        None = 0,
+        Sleeping = 1,
+        AutoReuseWeapons = 2,
+        DownHold = 4,
+        OperatingAnotherEntity = 8,
+        UseTile = 16
     }
 }

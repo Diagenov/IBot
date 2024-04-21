@@ -103,7 +103,7 @@ namespace IBot
         public Control Control = Control.Direction;
         public Pulley Pulley;
         public Miscs Miscs;
-        public bool Sleeping;
+        public Sleeping Sleeping;
         public PointF Position;
         public PointF Velocity;
         public PointF OriginalPos;
