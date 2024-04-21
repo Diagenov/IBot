@@ -1,1 +1,1 @@
-![Title](title.jpg)
+![Title](title.png)
