@@ -38,8 +38,8 @@ namespace IBot
         }
 
         public byte HairDye;
-        public short HideVisuals;
-        public byte HideMisc;
+        public HideVisuals HideVisuals;
+        public HideMisc HideMisc;
         public Color HairC;
         public Color SkinC;
         public Color EyeC;
@@ -133,7 +133,6 @@ namespace IBot
         {
             Skin = (byte)Utils.Rand.Next(MaxSkin + 1);
             Hair = (byte)Utils.Rand.Next(MaxHair + 1);
-            HideVisuals = (short)Utils.Rand.Next(ushort.MaxValue);
 
             HairC = Utils.RandomColor();
             SkinC = Utils.RandomColor();

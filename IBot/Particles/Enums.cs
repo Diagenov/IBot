@@ -104,4 +104,23 @@
         OperatingAnotherEntity = 8,
         UseTile = 16
     }
+
+    public enum HideVisuals : ushort
+    {
+        None = 0,
+        Slot62 = 8,
+        Slot63 = 16,
+        Slot64 = 32,
+        Slot65 = 64,
+        Slot66 = 128,
+        Slot67 = 256,
+        Slot68 = 512,
+    }
+
+    public enum HideMisc : byte
+    {
+        None = 0,
+        Slot89 = 1,
+        Slot90 = 2,
+    }
 }
