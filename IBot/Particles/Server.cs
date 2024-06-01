@@ -4,7 +4,7 @@ namespace IBot
 {
     public class Server
     {
-        public const ClientVersion CurrentVersion = ClientVersion.Version1447;
+        public const ClientVersion CurrentVersion = ClientVersion.Version1449;
 
         public readonly ClientVersion Version;
         public readonly ushort Port;
