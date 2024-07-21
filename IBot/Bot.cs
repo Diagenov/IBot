@@ -558,6 +558,7 @@ namespace IBot
                             Zones[1] = packet.Data[2];
                             Zones[2] = packet.Data[3];
                             Zones[3] = packet.Data[4];
+                            Zones[4] = packet.Data[5];
                         }
                         break;
 
